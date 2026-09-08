@@ -1,9 +1,5 @@
 # Gerenciadores de Pacotes do Node.js: npm, pnpm, npx, Yarn e Bun
 
-> Com tantas opções de gerenciados de pacotes na comunidade Node e sinceramente não é uma exclusividade somente do Node, podemos ver isso em outras linguagens que dependem da instalação e gerenciamento de pacotes (libs) para o seu ecosistema funcionar.
-> Para quem é iniciante ou simplesmente utiliza com pouca frequencia deve ter esbarrado com a menção destas letrinhas que precede o comando e acaba se perguntando (**O que é mesmo?**) ou (**Para que serve mesmo?**).
-> Portanto para facilitar a minha vida e para quem se identificou com o mesmo problema, eu decedi colocar estas definições em um lugar mais fácil de pesquisar sempre que pecisar.
-
 ## 1. npm (Node Package Manager)
 
 O **gerenciador padrão** do Node.js, instalado automaticamente junto com ele. É o mais compatível e amplamente documentado.
