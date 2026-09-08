@@ -2,6 +2,8 @@
 
 ## 1. npm (Node Package Manager)
 
+Para mais detalhes consultar a documentação em :envelope_with_arrow: [npm](https://docs.npmjs.com/)
+
 O **gerenciador padrão** do Node.js, instalado automaticamente junto com ele. É o mais compatível e amplamente documentado.
 
 ### Comandos essenciais
@@ -30,6 +32,13 @@ npm test
 
 # Verificar pacotes desatualizados
 npm outdated
+
+# Lista os pacotes instalados
+# Local
+npm list --depth=0
+
+# Global
+npm list -g
 ```
 
 ### Características
@@ -44,6 +53,8 @@ npm outdated
 ---
 
 ## 2. pnpm (Performant npm)
+
+Para mais detalhes consultar a documentação em :envelope_with_arrow: [pnpm CLI](https://pnpm.io/pt/pnpm-cli)
 
 Criado para resolver os principais problemas do npm: **velocidade e desperdício de disco**. Usa um **armazenamento global com links simbólicos/hard links**, então o mesmo pacote instalado em 50 projetos ocupa espaço em disco **apenas uma vez**.
 
@@ -98,6 +109,8 @@ pnpm --filter frontend dev
 ## 3. npx (Node Package Execute)
 
 ⚠️ **Atenção:** o npx **não é um gerenciador de pacotes** — é um **executor**. Ele vem junto com o npm (desde a v5.2) e serve para **executar pacotes sem instalá-los globalmente**.
+
+Para mais detalhes consultar a documentação em :envelope_with_arrow: [npx](https://docs.npmjs.com/cli/v9/commands/npx?v=true)
 
 ### Casos de uso
 
