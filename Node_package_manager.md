@@ -2,7 +2,7 @@
 
 ## 1. npm (Node Package Manager)
 
-Para mais detalhes consultar a documentação em :envelope_with_arrow: [npm](https://docs.npmjs.com/)
+!!! Para mais detalhes consultar a documentação em :envelope_with_arrow: [npm](https://docs.npmjs.com/)
 
 O **gerenciador padrão** do Node.js, instalado automaticamente junto com ele. É o mais compatível e amplamente documentado.
 
@@ -54,7 +54,7 @@ npm list -g
 
 ## 2. pnpm (Performant npm)
 
-Para mais detalhes consultar a documentação em :envelope_with_arrow: [pnpm CLI](https://pnpm.io/pt/pnpm-cli)
+!!! Para mais detalhes consultar a documentação em :envelope_with_arrow: [pnpm CLI](https://pnpm.io/pt/pnpm-cli)
 
 Criado para resolver os principais problemas do npm: **velocidade e desperdício de disco**. Usa um **armazenamento global com links simbólicos/hard links**, então o mesmo pacote instalado em 50 projetos ocupa espaço em disco **apenas uma vez**.
 
@@ -108,9 +108,9 @@ pnpm --filter frontend dev
 
 ## 3. npx (Node Package Execute)
 
-⚠️ **Atenção:** o npx **não é um gerenciador de pacotes** — é um **executor**. Ele vem junto com o npm (desde a v5.2) e serve para **executar pacotes sem instalá-los globalmente**.
+!!! warning ⚠️ **Atenção:** o npx **não é um gerenciador de pacotes** — é um **executor**. Ele vem junto com o npm (desde a v5.2) e serve para **executar pacotes sem instalá-los globalmente**.
 
-Para mais detalhes consultar a documentação em :envelope_with_arrow: [npx](https://docs.npmjs.com/cli/v9/commands/npx?v=true)
+!!! Para mais detalhes consultar a documentação em :envelope_with_arrow: [npx](https://docs.npmjs.com/cli/v9/commands/npx?v=true)
 
 ### Casos de uso
 
@@ -274,7 +274,7 @@ Em todos os casos, o `package.json` resultante é praticamente idêntico — **o
 | Equipes que já usam / precisam de PnP | **Yarn** |
 | Projetos novos priorizando performance máxima / usar como runtime | **Bun** |
 
-**Dica de ouro:** em times, padronize um único gerenciador e use o campo `"packageManager"` no `package.json` para forçá-lo:
+!!! Tip **Dica de ouro:** em times, padronize um único gerenciador e use o campo `"packageManager"` no `package.json` para forçá-lo:
 
 ```json
 {
@@ -296,7 +296,7 @@ Quando falamos de pacotes Node.js, o conteúdo pode viver em três contextos dis
 | **Cache/Store** | `~/.npm` (npm) ou store do pnpm | Apenas **conteúdo baixado em cache**, para não baixar de novo da internet |
 | **Global** | Diretório específico da máquina | Binários disponíveis no **PATH** — funcionam em qualquer terminal |
 
-⚠️ O erro conceitual mais comum é **confundir cache com instalação global**. Cache é só uma cópia dos arquivos para economizar download — não torna nenhum comando executável globalmente.
+!!! warning O erro conceitual mais comum é **confundir cache com instalação global**. Cache é só uma cópia dos arquivos para economizar download — não torna nenhum comando executável globalmente.
 
 ---
 
@@ -431,4 +431,4 @@ Usando o pacote fictício `ferramenta-cli` como exemplo:
 >
 > **Instalação local (sem `-g`)** = tudo que seu projeto importa no código (`express`, `react`, `jest`). Mesmo que o pnpm guarde os arquivos no store global, o pacote só é "utilizável" dentro dos projetos que o declaram.
 
-**Dica extra:** uma tendência moderna é evitar instalações globais até para ferramentas de CLI — instalando-as como dependência de desenvolvimento (`-D`) no projeto. Isso garante que **toda a equipe use exatamente a mesma versão** da ferramenta, versionada junto com o código no repositório.
+!!! Tip **Dica extra:** uma tendência moderna é evitar instalações globais até para ferramentas de CLI — instalando-as como dependência de desenvolvimento (`-D`) no projeto. Isso garante que **toda a equipe use exatamente a mesma versão** da ferramenta, versionada junto com o código no repositório.
